@@ -3,6 +3,7 @@
 This workflow performs a RNAseq data analysis from alignement to DEG analysis
 
 # Workflow structure
+
 ├── .gitignore
 ├── README.md
 ├── LICENSE.md
