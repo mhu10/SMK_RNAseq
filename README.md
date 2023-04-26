@@ -11,13 +11,14 @@ git clone https://github.com/mhu10/SMK_RNAseq path/to/workdir
 cd path/to/workdir
 
 ## edit config and workflow as needed
-vim config.yaml
+vim config.yaml or your prefered text editor
 
-## install dependencies into isolated environment
-conda env create -n myworkflow --file environment.yaml
 
-## activate environment
-source activate myworkflow
+## activate snakemake
+conda activate snakemake
+
+## dry run workflow
+snakemake -n
 
 ## execute workflow
-snakemake -n
+snakemake --use-conda --cores 12
