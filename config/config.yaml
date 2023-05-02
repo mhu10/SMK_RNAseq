@@ -1,7 +1,7 @@
 ### custom parameters #####
 
 INPUT_DIR: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_DataSets/RNAseq/'  ## path to your raw data
-WORK_DIR: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_RNAseq/'            ## path to your working directory
+WORK_DIR: '/zp1/data/mhu10/ProjectOMB1/SMK_test/'            ## path to your working directory
 
 FASTA: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.dna.primary_assembly.fa'  ## path to FASTA file
 GTF: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.107.gtf'                    ## path to GTF file
