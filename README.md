@@ -11,6 +11,7 @@ This workflow performs a RNAseq data analysis from alignement to DEG analysis
 Please make sure that Snakemake and Git are correctly installed
 
 Snakemake: https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+
 Git: https://anaconda.org/anaconda/git
 
 ## clone workflow into your working directory
