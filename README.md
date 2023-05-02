@@ -1,6 +1,6 @@
 # SMK_RNAseq
 
-This workflow performs a RNAseq data analysis from alignement to DEG analysis
+This workflow performs an RNAseq data analysis from alignement(STAR aligner) to DEG analysis(DESEQ2)
 
 
 
