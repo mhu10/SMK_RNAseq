@@ -15,7 +15,9 @@ Snakemake: https://snakemake.readthedocs.io/en/stable/getting_started/installati
 Git: https://anaconda.org/anaconda/git
 
 ## Clone workflow into your working directory
+```
 git clone https://github.com/mhu10/SMK_RNAseq  path/to/workdir
+```
 
 ## Modify filenames of your raw fastq files
 The format of your pair-end fastq files must be 
@@ -28,10 +30,16 @@ prefix_R2.fastq.gz
 vim config.yaml or your prefered text editor
 
 ## Activate snakemake
+```
 conda activate snakemake
+```
 
 ## Dry run workflow
+```
 snakemake -n
+```
 
 ## Execute workflow
+```
 snakemake --use-conda --cores 12
+```
