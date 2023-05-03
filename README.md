@@ -19,7 +19,9 @@ git clone https://github.com/mhu10/SMK_RNAseq path/to/workdir
 
 ## Modify filenames of your raw fastq files
 The format of your pair-end fastq files must be 
+
 prefix_R1.fastq.gz
+
 prefix_R2.fastq.gz
 
 ## Edit config.yaml and workflow as needed
