@@ -17,7 +17,7 @@ Git: https://anaconda.org/anaconda/git
 ## Clone workflow into your working directory
 
 ```
-git clone https://github.com/mhu10/SMK_RNAseq  path/to/workdir
+git clone https://github.com/mhu10/SMK_RNAseq path/to/workdir
 ```
 
 ## Modify filenames of your raw fastq files
@@ -29,9 +29,9 @@ prefix_R2.fastq.gz
 
 ## Edit config file and workfileas needed
 
-'config.yaml'
+./SMK_RNAseq/config/'config.yaml
 
-'Snakefile'
+./SMK_RNAseq/Snakefile
 
 ## Activate snakemake
 
@@ -50,3 +50,13 @@ snakemake -n
 ```
 snakemake --use-conda --cores 12
 ```
+
+## Build DAG workflow chart
+
+```
+snakemake --rulegraph | dot -Tsvg > dag1.svg
+```
+
+## Data structure
+
+
