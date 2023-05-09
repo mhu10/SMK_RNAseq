@@ -57,6 +57,3 @@ snakemake --use-conda --cores 12
 snakemake --rulegraph | dot -Tsvg > dag1.svg
 ```
 
-## Data structure
-
-
