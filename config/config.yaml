@@ -1,16 +1,16 @@
 ### custom parameters #####
 
-INPUT_DIR: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_DataSets/RNAseq/'  ## path to your raw data
-WORK_DIR: '/zp1/data/mhu10/ProjectOMB1/SMK_test/'            ## path to your working directory
+INPUT_DIR: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_DataSets/RNAseq/'  ## path to raw data
+WORK_DIR: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_testing/'           ## path to working directory
 
-FASTA: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.dna.primary_assembly.fa'  ## path to FASTA file
-GTF: '/zp1/data/mhu10/ProjectOMB2/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.107.gtf'                    ## path to GTF file
+FASTA: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.dna.primary_assembly.fa'  ## path to FASTA file
+GTF: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.107.gtf'                    ## path to GTF file
 
-LIST_SAMPLES: ['CTL1','CTL2','CTL3','CTL4','LD25-1','LD25-2','LD25-3','LD25-4','LD50-1','LD50-2','LD50-3','LD50-4','LD75-1','LD75-2','LD75-3','LD75-4']
-LIST_SAMPLES_BIO: ['CTL','CTL','CTL','CTL','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD75','CSE-LD75','CSE-LD75','CSE-LD75']
+LIST_SAMPLES: ['CTL1','CTL2','CTL3','CTL4','LD25-1','LD25-2','LD25-3','LD25-4','LD50-1','LD50-2','LD50-3','LD50-4','LD75-1','LD75-2','LD75-3','LD75-4']   ## prefix of samples
+LIST_SAMPLES_BIO: ['CTL','CTL','CTL','CTL','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD75','CSE-LD75','CSE-LD75','CSE-LD75']  ## biological condition of samples
 
-CTL_NAME: 'CTL'
-STIM_NAME: 'CSE-LD25'
+CTL_NAME: 'CTL'          ## biological condition of your control samples for DEG analysis
+STIM_NAME: 'CSE-LD25'    ## biological condition of your treated samples for DEG analysis
 
-Threshold_Padj: '0.05'  ## threshold for DESEQ2 
-Threshold_logFC: '1'    ## threshold for DESEQ2
+Threshold_Padj: '0.05'  ## threshold in DESEQ2 
+Threshold_logFC: '1'    ## threshold in DESEQ2
