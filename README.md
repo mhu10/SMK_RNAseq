@@ -11,6 +11,7 @@ This workflow performs an RNAseq data analysis from alignement(STAR aligner) to 
 Please make sure that Git and Snakemake are correctly installed
 
 Git: https://anaconda.org/anaconda/git
+
 Snakemake: https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
 
 ## Clone workflow into your working directory
