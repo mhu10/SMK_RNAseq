@@ -8,11 +8,10 @@ This workflow performs an RNAseq data analysis from alignement(STAR aligner) to 
 
 ## Install Snakemake and Git
 
-Please make sure that Snakemake and Git are correctly installed
-
-Snakemake: https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
+Please make sure that Git and Snakemake are correctly installed
 
 Git: https://anaconda.org/anaconda/git
+Snakemake: https://snakemake.readthedocs.io/en/stable/getting_started/installation.html
 
 ## Clone workflow into your working directory
 
@@ -20,14 +19,14 @@ Git: https://anaconda.org/anaconda/git
 git clone https://github.com/mhu10/SMK_RNAseq path/to/workdir
 ```
 
-## Modify filenames of your raw fastq files
+## Modify filenames of your raw fastq files as needed
 The format of your pair-end fastq files must be 
 
 prefix_R1.fastq.gz
 
 prefix_R2.fastq.gz
 
-## Edit config file and workfileas needed
+## Edit config file and Snakefile file as needed
 
 ./SMK_RNAseq/config/'config.yaml
 
