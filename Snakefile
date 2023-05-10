@@ -1,7 +1,7 @@
 configfile: "config/config.yaml"
 
-IDS, = glob_wildcards(config['INPUT_DIR']+'{id}_001.fastq.gz')                ###---  modify filename if needed
-SAMPLES, = glob_wildcards(config['INPUT_DIR']+'{sample}_R1_001.fastq.gz')     ###---  modify filename if needed
+IDS, = glob_wildcards(config['INPUT_DIR']+'{id}.fastq.gz')                ###---  modify filename if needed
+SAMPLES, = glob_wildcards(config['INPUT_DIR']+'{sample}_R1.fastq.gz')     ###---  modify filename if needed
 
 rule all:
     input:
@@ -22,7 +22,7 @@ rule all:
 
 rule fastqc:
     input:
-        config['INPUT_DIR']+'{id}_001.fastq.gz',
+        config['INPUT_DIR']+'{id}.fastq.gz',
     output:
         html="results/fastqc/{id}.html",
         zip="results/fastqc/{id}_fastqc.zip",
@@ -39,8 +39,8 @@ rule fastqc:
 
 rule trimmomatic_pe:
     input:
-        r1=config['INPUT_DIR']+'{sample}_R1_001.fastq.gz',
-        r2=config['INPUT_DIR']+'{sample}_R2_001.fastq.gz'
+        r1=config['INPUT_DIR']+'{sample}_R1.fastq.gz',
+        r2=config['INPUT_DIR']+'{sample}_R2.fastq.gz'
     output:
         r1="results/trimmomatic/{sample}_R1_trimmed.fastq",
         r2="results/trimmomatic/{sample}_R2_trimmed.fastq",
