@@ -6,11 +6,11 @@ WORK_DIR: '/zp1/data/ShareData/SnakemakeWorkflow/RNAseq_testing/'           ## p
 FASTA: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.dna.primary_assembly.fa'  ## path to FASTA file
 GTF: '/zp1/data/ShareData/SnakemakeWorkflow/SMK_Genomes/Ensembl/Human/GRCh38/Homo_sapiens.GRCh38.107.gtf'                    ## path to GTF file
 
-LIST_SAMPLES: ['CTL1','CTL2','CTL3','CTL4','LD25-1','LD25-2','LD25-3','LD25-4','LD50-1','LD50-2','LD50-3','LD50-4','LD75-1','LD75-2','LD75-3','LD75-4']   ## prefix of samples
-LIST_SAMPLES_BIO: ['CTL','CTL','CTL','CTL','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD25','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD50','CSE-LD75','CSE-LD75','CSE-LD75','CSE-LD75']  ## biological condition of samples
+LIST_SAMPLES: ['CTL1','CTL2','CTL3','CTL4','LD25_1','LD25_2','LD25_3','LD25_4','LD50_1','LD50_2','LD50_3','LD50_4','LD75_1','LD75_2','LD75_3','LD75_4']   ## prefix of samples
+LIST_SAMPLES_BIO: ['CTL','CTL','CTL','CTL','CSE_LD25','CSE_LD25','CSE_LD25','CSE_LD25','CSE_LD50','CSE_LD50','CSE_LD50','CSE_LD50','CSE_LD75','CSE_LD75','CSE_LD75','CSE_LD75']  ## biological condition of samples
 
 CTL_NAME: 'CTL'          ## biological condition of your control samples for DEG analysis
-STIM_NAME: 'CSE-LD25'    ## biological condition of your treated samples for DEG analysis
+STIM_NAME: 'CSE_LD25'    ## biological condition of your treated samples for DEG analysis
 
 Threshold_Padj: '0.05'  ## threshold in DESEQ2 
 Threshold_logFC: '1'    ## threshold in DESEQ2
